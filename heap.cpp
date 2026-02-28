@@ -31,6 +31,7 @@ for (int i = vdata.size()/2 - 1; i >= 0; i--) {
             index = smallest;
         }
 }
+}
 
 // Pushes a value into the heap, then ensures
 // the heap is correctly arranged
@@ -43,6 +44,7 @@ void Heap::push (int value){
             break;
         swap(vdata[parent], vdata[index]);
         index = parent;
+}
 }
 
 // Pops the minimum value off the heap
