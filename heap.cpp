@@ -3,7 +3,7 @@
 
 #include "heap.h"
 #include <iostream>
-using std::cout;
+using namespace std;
 
 // Builds a heap from the range [start, end) using the heapify algorithm
 // Should run in O(n) time
@@ -34,7 +34,7 @@ for (int i = vdata.size()/2 - 1; i >= 0; i--) {
 
 // Pushes a value into the heap, then ensures
 // the heap is correctly arranged
-void Heap::push(int value){
+void Heap::push (int value){
  vdata.push_back(value);
     int index = vdata.size() - 1;
     while (index > 0) {
