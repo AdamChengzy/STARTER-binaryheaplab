@@ -74,7 +74,7 @@ if (empty()) return;
 
 // Returns the minimum element in the heap
 int Heap::top(){
-  return data[0];
+  return vdata[0];
 }
 
 // Returns true if the heap is empty, false otherwise
